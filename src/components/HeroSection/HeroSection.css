@@ -11,15 +11,19 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    height: 500px;
+    min-height: 80vh;
+    height: auto;
     margin-bottom: 3rem;
+    padding: 2rem 0;
   }
 }
 
 @media (max-width: 480px) {
   .hero-section {
-    height: 450px;
+    min-height: 100vh;
+    height: auto;
     margin-bottom: 2rem;
+    padding: 2rem 0;
   }
 }
 
@@ -55,7 +59,9 @@
 
 @media (max-width: 480px) {
   .hero-content {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 100%;
   }
 }
 

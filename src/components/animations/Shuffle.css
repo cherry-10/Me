@@ -13,6 +13,9 @@
   background-clip: text;
   animation: gradientFlow 5s ease infinite;
   filter: drop-shadow(0 0 20px rgba(96, 165, 250, 0.6));
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .shuffle-text.gradient-text {
@@ -47,6 +50,9 @@
 
 @media (max-width: 480px) {
   .shuffle-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    padding: 0 0.5rem;
   }
 }

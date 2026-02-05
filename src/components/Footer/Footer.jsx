@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} D. Charan Teja. All rights reserved.</p>
+          <p>&copy; D. Charan Teja. All rights reserved.</p>
         </div>
       </div>
     </footer>

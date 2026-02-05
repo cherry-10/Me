@@ -8,7 +8,7 @@ const Achievements = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowContent(true);
-    }, 3000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
