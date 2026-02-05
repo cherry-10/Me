@@ -11,21 +11,23 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    min-height: 80vh;
+    min-height: 70vh;
     height: auto;
     margin-bottom: 3rem;
-    padding: 2rem 0;
+    padding: 8rem 0 3rem;
+    display: flex;
+    align-items: flex-start;
   }
 }
 
 @media (max-width: 480px) {
   .hero-section {
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 85vh;
+    height: auto;
     margin-bottom: 2rem;
-    padding: 0;
+    padding: 8rem 0 3rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
 }
@@ -63,14 +65,14 @@
 
 @media (max-width: 480px) {
   .hero-content {
-    padding: 1rem;
+    padding: 0 1rem;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
   }
 }
