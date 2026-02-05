@@ -48,29 +48,41 @@
 
 
 @media (max-width: 768px) {
+  .highlights-section {
+    padding: 4rem 1rem;
+  }
+
   .highlights-title {
     font-size: 2.5rem;
   }
 
   .highlights-subtitle {
     font-size: 1.1rem;
+    padding: 0 1rem;
   }
 
   .masonry-container {
-    min-height: 600px;
+    min-height: 800px;
+    padding: 0 0.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .highlights-section {
-    padding: 4rem 0;
+    padding: 3rem 0.5rem;
   }
 
   .highlights-title {
     font-size: 2rem;
   }
 
+  .highlights-subtitle {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
   .masonry-container {
-    min-height: 500px;
+    min-height: 1000px;
+    padding: 0 0.25rem;
   }
 }
