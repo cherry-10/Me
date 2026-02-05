@@ -1,0 +1,45 @@
+.text-type {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #fbbf24 0%, #f472b6 50%, #ffffff 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  line-height: 1.2;
+  animation: gradientShift 4s ease infinite;
+  filter: drop-shadow(0 0 25px rgba(251, 191, 36, 0.6));
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.text-type .cursor {
+  color: var(--primary-color);
+  font-weight: 300;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.text-type .cursor.visible {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .text-type {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-type {
+    font-size: 1.75rem;
+  }
+}

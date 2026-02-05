@@ -1,0 +1,26 @@
+.blur-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.blur-word {
+  display: inline-block;
+  filter: blur(10px);
+  opacity: 0;
+  transition: filter 0.6s ease, opacity 0.6s ease;
+}
+
+.blur-word.visible {
+  filter: blur(0);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .blur-text {
+    font-size: 1.05rem;
+    max-width: 100%;
+  }
+}
