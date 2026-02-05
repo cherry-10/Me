@@ -50,11 +50,6 @@ const Hyperspeed = ({
     if (appRef.current) {
       return;
     }
-    
-    const container = document.getElementById('lights');
-    if (container && container.firstChild) {
-      return;
-    }
     const mountainUniforms = {
       uFreq: { value: new THREE.Vector3(3, 6, 10) },
       uAmp: { value: new THREE.Vector3(30, 30, 20) }
@@ -1112,9 +1107,10 @@ const Hyperspeed = ({
     return () => {
       if (appRef.current) {
         appRef.current.dispose();
+        appRef.current = null;
       }
     };
-  }, [effectOptions]);
+  }, []);
 
   return <div id="lights" ref={hyperspeed}></div>;
 };
