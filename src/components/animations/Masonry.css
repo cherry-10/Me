@@ -5,6 +5,18 @@
   min-height: 600px;
 }
 
+@media (max-width: 768px) {
+  .list {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .list {
+    min-height: 400px;
+  }
+}
+
 .item-wrapper {
   position: absolute;
   will-change: transform, width, height, opacity;
@@ -12,6 +24,12 @@
   cursor: pointer;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 480px) {
+  .item-wrapper {
+    padding: 4px;
+  }
 }
 
 .item-wrapper > .item-img {
