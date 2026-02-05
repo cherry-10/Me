@@ -10,6 +10,9 @@
   line-height: 1.2;
   animation: gradientShift 4s ease infinite;
   filter: drop-shadow(0 0 25px rgba(251, 191, 36, 0.6));
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 @keyframes gradientShift {
@@ -40,6 +43,8 @@
 
 @media (max-width: 480px) {
   .text-type {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    padding: 0 0.5rem;
   }
 }

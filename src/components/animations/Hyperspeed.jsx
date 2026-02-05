@@ -48,13 +48,12 @@ const Hyperspeed = ({
 
   useEffect(() => {
     if (appRef.current) {
-      appRef.current.dispose();
-      const container = document.getElementById('lights');
-      if (container) {
-        while (container.firstChild) {
-          container.removeChild(container.firstChild);
-        }
-      }
+      return;
+    }
+    
+    const container = document.getElementById('lights');
+    if (container && container.firstChild) {
+      return;
     }
     const mountainUniforms = {
       uFreq: { value: new THREE.Vector3(3, 6, 10) },
