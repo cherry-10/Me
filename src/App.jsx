@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import PillNavbar from './components/PillNavbar/PillNavbar';
 import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
@@ -24,6 +25,7 @@ function ScrollToTop() {
 function App() {
   return (
     <Router>
+      <LoadingScreen />
       <ScrollToTop />
       <div className="app">
         <PillNavbar />
