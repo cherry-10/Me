@@ -30,6 +30,13 @@ const PillNavbar = () => {
           </span>
         </button>
 
+        {isOpen && (
+          <div 
+            className="menu-overlay" 
+            onClick={() => setIsOpen(false)}
+          />
+        )}
+
         <div className={`pill-nav-items ${isOpen ? 'open' : ''}`}>
           {navItems.map((item) => (
             <NavLink
