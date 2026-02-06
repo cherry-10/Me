@@ -18,7 +18,7 @@ const LoadingScreen = () => {
     <div className="loading-screen">
       <div className="loading-content">
         <div className="loading-text">
-          <span className="loading-word">Charan Teja</span>
+          <span className="loading-word">Charan</span>
           <span className="loading-word">Data</span>
           <span className="loading-word">Analyst</span>
         </div>
