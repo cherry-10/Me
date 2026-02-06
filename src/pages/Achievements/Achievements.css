@@ -2,6 +2,18 @@
   padding: 8rem 0 2rem;
 }
 
+@media (max-width: 768px) {
+  .achievements-page {
+    padding: 4rem 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-page {
+    padding: 3rem 0 2rem;
+  }
+}
+
 .achievements-hero {
   position: relative;
   height: 600px;

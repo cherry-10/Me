@@ -2,6 +2,18 @@
   padding: 8rem 0 2rem;
 }
 
+@media (max-width: 768px) {
+  .services-page {
+    padding: 4rem 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-page {
+    padding: 3rem 0 2rem;
+  }
+}
+
 .services-hero {
   position: relative;
   height: 600px;
